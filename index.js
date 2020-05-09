@@ -24,7 +24,19 @@ var rsvpListener = null;
 var guestbookListener = null;
 
 // Add Firebase project configuration object here
-var firebaseConfig = {};
+// Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZxkc_W-0Q7TH_wQFUnCaVYA-_fUIE8zo",
+    authDomain: "nubank-das-dividas.firebaseapp.com",
+    databaseURL: "https://nubank-das-dividas.firebaseio.com",
+    projectId: "nubank-das-dividas",
+    storageBucket: "nubank-das-dividas.appspot.com",
+    messagingSenderId: "947124074941",
+    appId: "1:947124074941:web:19efe68073dcd51f507ad4",
+    measurementId: "G-L1DN0QJEWD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 // Initialize Firebase
 if (firebaseConfig && firebaseConfig.apiKey) {
